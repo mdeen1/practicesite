@@ -122,6 +122,79 @@ html, body {
   font-size: 32px;
   color: #3A4793;
 }
+#all-tasks .task-form {
+  background: #3A4793;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 50px 0;
+  transform: translate(0, 100%);
+  transition: all .6s ease-in-out;
+}
+#all-tasks .task-form.active {
+  transform: translate(0, 0);
+}
+#all-tasks .task-form .close-btn {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  padding: 15px;
+}
+#all-tasks .task-form .close-btn .fa {
+  font-size: 36px;
+}
+#all-tasks .task-form form {
+  display: inline-block;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+#all-tasks .task-form h3 {
+  margin: 50px 0;
+  font-size: 36px;
+  text-align: center;
+}
+#all-tasks .task-form .form-group {
+  margin-bottom: 20px;
+}
+#all-tasks .task-form label {
+  font-family: 'Roboto', cursive;
+  font-weight: 300;
+  font-size: 24px;
+  display: block;
+  text-transform: Capitalize;
+  margin: 0 0 15px 0;
+}
+#all-tasks .task-form input[type="text"], #all-tasks .task-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  font-family: 'Roboto', cursive;
+  font-weight: 300;
+  font-size: 36px;
+  color: white;
+}
+#all-tasks .task-form input[type="text"]:focus, #all-tasks .task-form textarea:focus {
+  outline: none;
+  border: none;
+}
+#all-tasks .task-form textarea {
+  height: 250px;
+}
+#all-tasks .task-form button {
+  background: #25B3EC;
+  padding: 15px 20px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
 
 .container {
   max-width: 1200px;

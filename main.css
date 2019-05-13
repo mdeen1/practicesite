@@ -6,6 +6,7 @@
 html, body {
   background: #EDEDED;
   height: 100%;
+  overflow: hidden;
 }
 
 #home {
@@ -43,6 +44,10 @@ html, body {
   text-transform: uppercase;
 }
 
+#all-tasks {
+  height: 100%;
+  overflow: auto;
+}
 #all-tasks .header {
   background: url("https://static.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg") center center;
   background-repeat: no-repeat;
@@ -55,6 +60,7 @@ html, body {
   background: rgba(58, 71, 147, 0.6);
   padding: 50px 15px;
   text-align: right;
+  position: relative;
 }
 #all-tasks .header .top .logo {
   font-family: 'Megrim', cursive;
@@ -91,6 +97,7 @@ html, body {
 #all-tasks .content-area {
   color: red;
   width: 100%;
+  overflow: auto;
 }
 #all-tasks .content-area .tasks-container {
   margin: 40px 0;
@@ -201,8 +208,31 @@ html, body {
   display: block;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
+/* Phones */
+@media screen and (max-width: 767px) {
+  #all-tasks {
+    background-color: yellow;
+  }
+}
+
+/*tablets */
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  #all-tasks {
+    background-color: red;
+  }
+}
+
+/*laptop */
+
+@media screen and (min-width: 1200px) {
+  #all-tasks {
+    background-color: blue;
+  }
+}
 .btn {
   width: 100%;
   padding: 10px 20px;
